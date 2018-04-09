@@ -1,0 +1,829 @@
+/*
+Theme Name:Thème Inuka
+Theme URI:http://www.inuka.org
+Description:Thème créé pour l'A.S.B.L. Inuka partenaire d'EALE
+Version:1.0
+Author:BÜHL Sébastien
+Author URI:http://www.asredy.site90.com
+*/
+
+/*======================*/
+/*==== Reset Style ======*/
+/*======================*/
+/* Reset d'Eric Meyer 
+@ http://meyerweb.com/eric/tools/css/reset/ */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+/*======================*/
+/*==== Body Style ======*/
+/*======================*/
+
+body {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:1 em;
+	text-align:justify;
+	color:#000;
+	margin:0;
+	padding:0;
+	background-image: url(images/top_recherche.png);
+	background-position: center top;
+	background-repeat: repeat-x;
+	line-height:1.4;
+	background-color: #93aa21;
+}
+h1, h2, h3, h4, p {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	line-height:1.4;
+}
+h2 {
+	font-size:1.1em;
+}
+/*======================*/
+/*==== Page Style ======*/
+/*======================*/
+
+#page {
+	margin: 7px auto 0 auto;
+	width:964px;
+	background: #93aa21;
+}
+.h2pagefixe{
+	font-weight:bolder;
+	font-size:1.5em;
+}
+.inuka{
+	color:#93aa21;
+	text-transform:uppercase;
+	font-weight:bold;
+	text-decoration:none;
+}
+.lien{
+	color:#93aa21;
+	text-decoration:none;
+}
+ a:hover{
+	color:#0b76b3;
+}
+.fixe{
+	text-indent:50px;
+}
+a {
+    border-style: none;
+    color: #93AA21;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
+}
+.partenaires{
+	margin:auto;
+}
+img .partenaires {
+	width:200px;
+	margin:auto;
+}
+/*======================*/
+/*==== Header Style ====*/
+/*======================*/
+
+header {
+	margin-top:20px;
+	width: 964px;
+	height: 300px;
+	background-color: #93aa21;
+	z-index: 30;
+}
+header h1, header p {
+	position:absolute;
+	left:-50000px;
+	top:-50000px;
+}
+.diaporama {
+	width:964px;
+	height:300px;
+	z-index:10;
+	padding:0;
+	border: 1px solid #000;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	-ms-border-radius:4px;
+	box-shadow:5px 5px 20px #000;
+	-moz-box-shadow:5px 5px 20px #000;
+	-webkit-box-shadow:5px 5px 20px #000;
+	-khtml-box-shadow:5px 5px 20px #000;
+	-ms-box-shadow:5px 5px 20px #000;
+}
+.diaporama li {
+	list-style-type:none;
+	overflow:hidden;
+	position:absolute;
+	padding:0;
+}
+#logo {
+	width: 964px;
+	position: absolute;
+	top: 30px;
+	z-index: 30;
+}
+#logo a {
+	width: 820px;
+	height: 119px;
+	margin: auto;
+	background-image: url(images/logo_4.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+	border: 1px solid #000000;
+	border-radius: 4px;
+	box-shadow: 5px 5px 20px #000000;
+	display: block;
+	z-index: 30;
+}
+#logo a:hover {
+	background-position:bottom;
+}
+#navbar {
+	position: absolute;
+	top: 157px;
+	width: 964px;
+	z-index: 30;
+}
+ul#nav {
+	display: block;
+	margin: auto;
+	width: 820px;
+	height:25px;
+	list-style:none;
+	padding:0;
+}
+ul#nav li {
+	display: block;
+	float: left;
+	list-style-type: none;
+	margin: auto 5px auto auto;
+	width: 200px;
+	padding:0;
+}
+ul#nav li:last-of-type {
+	margin:auto;
+}
+ul#nav li a {
+	background-color: rgba(136, 162, 11, 0.8);
+	border: 1px solid #000000;
+	border-radius: 4px 4px 4px 4px;
+	box-shadow: 5px 5px 20px #000000;
+	color: #FFFFFF;
+	display: block;
+	margin: auto;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	z-index: 30;
+}
+ul#nav a:hover {
+	color:#0b76b3;
+	background-color: rgba(136, 162, 11, 1);
+}
+/*======================*/
+/*== Sidebar Style =====*/
+/*======================*/
+
+.sidebar {
+	float:left;
+	width:231px;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+ul.sidebar_nav {
+	list-style: none outside none;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding:0;
+}
+ul.sidebar_nav li.widget {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #000000;
+	border-radius: 4px 4px 4px 4px;
+	box-shadow: 5px 5px 20px #000000;
+	color: #0B76B3;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding-top: 6px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	list-style:none;
+	padding-bottom: 8px;
+}
+.widget {
+	padding:0;
+}
+.widget ul {
+	padding-left:23px;
+	padding-top:5px;
+}
+li.widget a {
+	border-style: none;
+	color: #93AA21;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	text-decoration: none;
+	text-transform: none;
+}
+li.widget a:hover {
+	color:#0B76B3;
+}
+li.widget:hover {
+	color:#0B76B3;
+}
+li:first-letter:hover {
+ color:#0B76B3;
+}
+li {
+	border-style: none;
+	color: #93AA21;
+	list-style-type: disc;
+	margin: 0;
+	padding: 0;
+	text-align:left;
+	padding-left:5px;
+}
+#search-3 {
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+}
+/*======================*/
+/*===== Content Style ==*/
+/*======================*/
+
+#content {
+	width:714px;
+	float:right;
+	margin-top:20px;
+	margin-bottom:20px;
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	-ms-border-radius:4px;
+	box-shadow:5px 5px 20px #000;
+	-moz-box-shadow:5px 5px 20px #000;
+	-webkit-box-shadow:5px 5px 20px #000;
+	-khtml-box-shadow:5px 5px 20px #000;
+	-ms-box-shadow:5px 5px 20px #000;
+}
+.post {
+	margin:36px;
+	width:642px;
+}
+.post h2 {
+	float:left;
+	width:453px;
+}
+.post h2 a {
+	color: #0B76B3;
+	font-size: 100%;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.post h2 a:hover {
+	color:#88A20B;
+}
+.post_content {
+	color: black;
+	font-size: 1em;
+	padding-top: 10px;
+	text-align: justify;
+	clear:both;
+	
+}
+.date {
+	color: #0B76B3;
+	font-size: 1em;
+	margin-left: 489px;
+}
+.auteur {
+	color: #88A20B;
+	float: left;
+	font-size: 1em;
+}
+.auteur a {
+	color: #88A20B;
+	font-size: 1em;
+	text-decoration: none;
+}
+.auteur a:hover {
+	color:#0B76B3;
+}
+.entry {
+	font-size:0.8em;
+	padding-top:20px;
+}
+.strike_article {
+	background-image: url(images/strike_copy.png);
+	background-repeat: repeat-x;
+	height: 1px;
+	margin-top: 36px;
+	width: 642px;
+}
+.more-link {
+	color: #88A20B;
+	float: left;
+	font-size: 1.2em;
+	text-decoration: none;
+	padding-left: 534px;
+}
+.more-link:hover {
+	color:#0B76B3;
+}
+.navigation {
+	margin: 36px;
+	width: 642px;
+}
+.navigation a {
+	color: #88A20B;
+	font-size: 1em;
+	text-decoration: none;
+}
+.navigation a:hover {
+	color:#0B76B3;
+}
+.alignright {
+	float:right;
+	padding-bottom:36px;
+}
+/*======================*/
+/*==== Comment Style ===*/
+/*======================*/
+
+.comments-template {
+	margin: 36px;
+	width: 642px;
+	padding: 0;
+	font-size:0.9em;
+}
+.comments-template a {
+	color: #88A20B;
+	font-size: 1em;
+	text-decoration: none;
+}
+.comments-template a:hover {
+	color:#0B76B3;
+}
+#comment {
+	width:642px;
+}
+small, code {
+	font-size:0.9em;
+}
+input:hover {
+	color:#0B76B3;
+}
+textarea {
+	color:#88A20B;
+}
+
+/*======================*/
+/*== Page Navigation ===*/
+/*======================*/
+.num_page{
+	width:714px;
+	height:30px;
+}
+.wp-pagenavi{
+	margin:auto;
+	display: block;
+	text-align: center;
+	color:#88A20B;
+	clear: both;
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+	text-decoration: none;
+	border: 1px solid #88A20B;
+	padding: 3px 5px;
+	margin: 2px;
+}
+
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+	border-color: #0B76B3;
+}
+
+.wp-pagenavi span.current {
+	font-weight: bold;
+}
+
+.wp-pagenavi a{
+	color:#0B76B3;
+}
+
+/*======================*/
+/*==== Footer Style ====*/
+/*======================*/
+
+#footer {
+	clear:both;
+	width:964px;
+	height:237px;
+	margin:0 auto 0 auto;
+	background-color:#FFF;
+	border: 1px solid #000;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	-ms-border-radius:4px;
+	box-shadow:5px 5px 20px #000;
+	-moz-box-shadow:5px 5px 20px #000;
+	-webkit-box-shadow:5px 5px 20px #000;
+	-khtml-box-shadow:5px 5px 20px #000;
+	-ms-box-shadow:5px 5px 20px #000;
+}
+#col {
+	margin:0 auto;
+}
+.footer_col1 {
+	display: block;
+	float: left;
+	width: 239px;
+	padding-top: 10px;
+}
+.col_1 {
+	padding-left:23px;
+}
+#footer h2 {
+	text-align:center;
+	text-transform: uppercase;
+	color: #0b76b3;
+}
+#footer li {
+	padding-left:30px;
+}
+#footer li {
+	border-style: none;
+	list-style-type: disc;
+	color:#88a20b;
+	margin: 0;
+	padding-left:5px;
+}
+nav {
+	padding:0;
+}
+nav ul {
+	padding:0;
+}
+#footer li:hover {
+	color:#0B76B3;
+}
+#footer a {
+	text-transform: none;
+	color: #93aa21;
+	text-decoration: none;
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#footer a:hover {
+	color:#0b76b3;
+}
+.strike_verticale {
+	background-image:url(images/strike_copy.png);
+	background-repeat:repeat-y;
+	width:1px;
+	height:193px;
+	padding-left:1px;
+	margin-top:15px;
+	float:left;
+}
+/*====================*/
+/*= Copyright Style ==*/
+/*====================*/
+
+#copyright {
+	margin:0 auto;
+	text-transform: none;
+	text-align: center;
+}
+#copyright .strike {
+	float: left;
+	height: 5px;
+	width: 918px;
+	background-image:url(images/strike_copy.png);
+	background-repeat: repeat-x;
+	margin-top:5px;
+	background-position: 300px;
+	margin-left: 20px;
+}
+#copyright #copy {
+	float: left;
+	width: 964px;
+	text-align: center;
+	font-size:10px;
+	color:#0b76b3;
+}
+#copyright p {
+	padding:0;
+	margin:0;
+}
+
+/*====================*/
+/*= Accordion Style ==*/
+/*====================*/
+
+/* SpryAccordion.css - version 0.5 - Spry Pre-Release 1.6.1 */
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+/* This is the selector for the main Accordion container. For our default style,
+ * we draw borders on the left, right, and bottom. The top border of the Accordion
+ * will be rendered by the first AccordionPanelTab which never moves.
+ *
+ * If you want to constrain the width of the Accordion widget, set a width on
+ * the Accordion container. By default, our accordion expands horizontally to fill
+ * up available space.
+ *
+ * The name of the class ("Accordion") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style the
+ * Accordion container.
+ */
+.Accordion {
+	border: solid 1px #0b76b3;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	-ms-border-radius:4px;
+	overflow: hidden;
+}
+
+/* This is the selector for the AccordionPanel container which houses the
+ * panel tab and a panel content area. It doesn't render visually, but we
+ * make sure that it has zero margin and padding.
+ *
+ * The name of the class ("AccordionPanel") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style an
+ * accordion panel container.
+*/
+.AccordionPanel {
+	margin: 3px;
+	padding: 0px;
+	color:#0b76b3;
+}
+
+/* This is the selector for the AccordionPanelTab. This container houses
+ * the title for the panel. This is also the container that the user clicks
+ * on to open a specific panel.
+ *
+ * The name of the class ("AccordionPanelTab") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style an
+ * accordion panel tab container.
+ *
+ * NOTE:
+ * This rule uses -moz-user-select and -khtml-user-select properties to prevent the
+ * user from selecting the text in the AccordionPanelTab. These are proprietary browser
+ * properties that only work in Mozilla based browsers (like FireFox) and KHTML based
+ * browsers (like Safari), so they will not pass W3C validation. If you want your documents to
+ * validate, and don't care if the user can select the text within an AccordionPanelTab,
+ * you can safely remove those properties without affecting the functionality of the widget.
+ */
+.AccordionPanelTab {
+	background-color: rgba(136, 162, 11, 0.5);
+	border: solid 1px #0b76b3;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	-ms-border-radius:4px;
+	margin: 0px;
+	padding: 2px;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	padding-left:10px;
+
+}
+
+/* This is the selector for a Panel's Content area. It's important to note that
+ * you should never put any padding on the panel's content area if you plan to
+ * use the Accordions panel animations. Placing a non-zero padding on the content
+ * area can cause the accordion to abruptly grow in height while the panels animate.
+ *
+ * Anyone who styles an Accordion *MUST* specify a height on the Accordion Panel
+ * Content container.
+ *
+ * The name of the class ("AccordionPanelContent") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style an
+ * accordion panel content container.
+ */
+.AccordionPanelContent {
+	overflow: auto;
+	margin: 0px;
+	padding: 0px;
+	height: 500px;
+}
+
+/* This is an example of how to change the appearance of the panel tab that is
+ * currently open. The class "AccordionPanelOpen" is programatically added and removed
+ * from panels as the user clicks on the tabs within the Accordion.
+ */
+.AccordionPanelOpen .AccordionPanelTab {
+	background-color: rgba(136, 162, 11, 0.5);
+	padding-left:10px;
+	color:#0b76b3;
+	font-weight:bold;
+}
+
+/* This is an example of how to change the appearance of the panel tab as the
+ * mouse hovers over it. The class "AccordionPanelTabHover" is programatically added
+ * and removed from panel tab containers as the mouse enters and exits the tab container.
+ */
+.AccordionPanelTabHover {
+	background-color:  rgba(136, 162, 11, 0.5);
+	padding-left:10px;
+}
+
+.AccordionPanelTabHover {
+	background-color: rgba(136, 162, 11, 1);
+	padding-left:10px;
+}
+
+/* This is an example of how to change the appearance of all the panel tabs when the
+ * Accordion has focus. The "AccordionFocused" class is programatically added and removed
+ * whenever the Accordion gains or loses keyboard focus.
+ */
+.AccordionFocused .AccordionPanelTab {
+	background-color:  rgba(136, 162, 11, 0.5);
+	color:#0b76b3;
+	padding-left:10px;
+}
+
+/* This is an example of how to change the appearance of the panel tab that is
+ * currently open when the Accordion has focus.
+ */
+.AccordionFocused .AccordionPanelOpen .AccordionPanelTab {
+	background-color:  rgba(136, 162, 11, 0.5);
+	padding-left:10px;
+}
+
+h3.page{
+	color:#93AA21;
+	font-size:1.3em;
+	text-decoration:underline;
+	text-indent:20px;
+	margin-bottom:20px;
+}
+h4.page{
+	color:#93AA21;
+	font-size:1.1em;
+	text-decoration:underline;
+	text-indent:30px;
+}
+p.page{
+	text-indent:20px;
+	color:#000;
+	padding:10px;
+}
+ol.num{
+	margin-bottom:10px;
+	padding:10px;
+}
+li.page{
+	list-style-type:decimal;
+	margin-left:30px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+ul.beneficiaire{
+	margin-left:45px;
+	margin-bottom:10px;
+}
+li.beneficiaire{
+	color:#000;
+	list-style-type: disc;
+}
+ul.beneficiaire_sous{
+	margin-left:55px;
+	margin-bottom:10px;
+}
+li.beneficiaire_sous{
+	color:#000;
+	list-style-type:circle;
+}
+/* Rules for Printing */
+
+@media print {
+
+  .Accordion {
+  overflow: visible !important;
+  }
+  
+  .AccordionPanelContent {
+  display: block !important;
+  overflow: visible !important;
+  height: auto !important;
+  }
+}
+
+.photo{
+	margin:0;
+	padding:7px 0;
+}
+
+a img{
+	border: 1px solid #BBBBBB;
+    margin: 10px;
+    padding: 2px;
+    vertical-align: top;
+}
+
+#relatedposts h3 { font-size: 24px; margin: 10px 0px 20px 0px; font-weight: normal; }
+#relatedposts ul { list-style: none; }
+#relatedposts ul li { float: left; margin-right: 15px; width: 206px; }
+#relatedposts img { border: 1px solid #DDD; background: #F8F8F8; padding: 5px; margin-bottom: 5px; }
+#relatedposts a:hover { color: #51B1D3; }
+#relatedposts {
+	width:600px;
+	height:100px;
+}
+
+.cadre_vert {
+	background-color: #93AA21;
+	display: block;
+	padding-bottom: 5px;
+	margin:15px;
+	border: 1px solid #93AA21;
+    border-radius: 4px 4px 4px 4px;
+	clear:both;
+}
+.cadre_vert h2 {
+	color: #FFF;
+	padding-left:35px;
+	padding-top:5px;
+	margin-right:90px;
+}
+.accordeon{
+	color:#000;
+	padding:10px;
+	text-indent:35px;
+}
+#beneficiaire_gauche{
+	float:left;
+	width:250px;
+	
+}
+#beneficiaire_droite{
+	float:right;
+	width:250px;
+	
+}
+ul.cadre_vert{
+	margin-left:20px;
+}
+li.cadre_vert{
+	color: #FFF;
+}

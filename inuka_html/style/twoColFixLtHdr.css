@@ -1,0 +1,503 @@
+@charset "UTF-8";
+
+/*====================*/
+/*==== Body Style ====*/
+/*====================*/
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.4;
+	background-color: #93aa21;
+	background-image: url(../images/top_recherche.png);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+
+a:link {
+	color: #42413C;
+	text-decoration: underline; 
+}
+	
+.container {
+	width: 964px;
+	background: #93aa21;
+	margin-top: 7px;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+/*====================*/
+/*=== Header Style ===*/
+/*====================*/
+.header {
+	height: 300px;
+	width: 964px;
+	background-color: #93AA21;
+	z-index: 30;
+	margin-top:20px;
+}
+
+#logo {
+	clear: both;
+	position: absolute;
+	z-index: 30;
+	width: 964px;
+	height:158px;
+	top:30px;
+	
+	}
+#logo a{
+	margin: auto;
+	z-index: 30;
+	width: 820px;
+	height:119px;
+	background-image: url(../images/logo_4.png);
+	background-repeat: no-repeat;
+	background-position:top;
+	border: 1px solid #000;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	-ms-border-radius:4px;
+	box-shadow:5px 5px 20px #000;
+	-moz-box-shadow:5px 5px 20px #000;
+	-webkit-box-shadow:5px 5px 20px #000;
+	-khtml-box-shadow:5px 5px 20px #000;
+	-ms-box-shadow:5px 5px 20px #000;
+	display: block;
+}
+#logo a:hover{
+	background-position:bottom;
+	}
+
+#navigation {
+	display: block;
+	width: 964px;
+	height:55px;
+	z-index: 30;
+	position:absolute;
+	top:157px;
+}
+
+ul#nav_principale{
+	margin:auto;
+	display:block;
+	height:55px;
+	width:820px;
+}
+
+ul#nav_principale a:hover{
+	color:#0b76b3;
+	background-color: rgba(136, 162, 11, 1);
+	}
+li.nav_principale {
+	list-style-type: none;
+	float:left;
+	width: 205px;
+	display: block;
+	margin:auto;
+}
+
+li.nav_principale a {
+	background-color: rgba(136, 162, 11, .8);
+	text-align: center;
+	vertical-align: middle;
+	color: #FFF;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #000;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	-ms-border-radius:4px;
+	box-shadow:5px 5px 20px #000;
+	-moz-box-shadow:5px 5px 20px #000;
+	-webkit-box-shadow:5px 5px 20px #000;
+	-khtml-box-shadow:5px 5px 20px #000;
+	-ms-box-shadow:5px 5px 20px #000;
+	z-index: 30;
+	display:block;
+	padding: 0px;
+	margin-top: auto;
+	margin-right: 5px;
+	margin-bottom: auto;
+	margin-left: auto;
+}
+li.nav_principale_2 {
+	list-style-type: none;
+	float:left;
+	width: 205px;
+	display: block;
+	margin:auto;
+}
+li.nav_principale_2 a{
+	background-color: rgba(136, 162, 11, .8);
+	text-align: center;
+	vertical-align: middle;
+	color: #FFF;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #000;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	-ms-border-radius:4px;
+	box-shadow:5px 5px 20px #000;
+	-moz-box-shadow:5px 5px 20px #000;
+	-webkit-box-shadow:5px 5px 20px #000;
+	-khtml-box-shadow:5px 5px 20px #000;
+	-ms-box-shadow:5px 5px 20px #000;
+	z-index: 30;
+	display:block;
+	padding: 0px;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+}
+/* ~~ aucune largeur n'est attribuée à l'en-tête. Il occupera toute la largeur de votre mise en page. Il contient un espace réservé pour une image, qui doit être remplacé par votre logo lié. ~~ */
+
+.diaporama{
+    
+    width:964px; /* Largeur d'une photo */
+    height:300px; /* Hauteur d'une photo */
+	z-index:10;
+	margin-top:20px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	-ms-border-radius:4px;
+	box-shadow:5px 5px 20px #000;
+	-moz-box-shadow:5px 5px 20px #000;
+	-webkit-box-shadow:5px 5px 20px #000;
+	-khtml-box-shadow:5px 5px 20px #000;
+	-ms-box-shadow:5px 5px 20px #000;
+}
+
+.diaporama li{
+    list-style-type:none;
+    overflow:hidden;
+    position:absolute; /* Les images seront positionnées toutes au même endroit */
+}
+
+
+/*====================*/
+/*== Side Bar Style ==*/
+/*====================*/
+.sidebar1 {
+	float: left;
+	width: 231px;
+	margin-top:10px;
+}
+
+/*====================*/
+/*== Content Style ===*/
+/*====================*/
+.content {
+	width: 714px;
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:250px;
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	-ms-border-radius:4px;
+	box-shadow:5px 5px 20px #000;
+	-moz-box-shadow:5px 5px 20px #000;
+	-webkit-box-shadow:5px 5px 20px #000;
+	-khtml-box-shadow:5px 5px 20px #000;
+	-ms-box-shadow:5px 5px 20px #000;
+}
+
+.article {
+	width:642px;
+	margin:36px;
+	}
+
+.strike_articles {
+	background-image: url(../images/strike_copy.png);
+	background-repeat: repeat-x;
+	height:1px;	
+	width:642px;
+	margin-top:32px;
+}
+.article h1 {
+	width:453px;
+	float:left;
+		
+}
+.article h1 a{
+	color:#0B76B3;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:100%;
+	}
+.article h1 a:hover{
+	color:#88a20b;
+	}
+.article h2{
+	color:#88a20b;
+	font-size:80%;
+	float:left;
+	}
+.article h2 a{
+	color:#88a20b;
+	text-decoration:none;
+	}
+.article h2 a:hover{
+	color:#0b76b3;
+	}
+.article h3 {
+	color:#0b76b3;
+	font-size:70%;
+	margin-left:515px;
+	}
+.article p{
+	padding-top:10px;
+	padding-bottom:10px;
+	color:black;
+	font-size:80%;
+	text-align:justify;
+	}
+.lire_la_suite a:hover{
+	color:#0b76b3;}
+/* ~~ Ce sélecteur groupé donne de l'espace aux listes dans la zone .content ~~ */
+.content ul, .content ol {
+	padding: 0 15px 15px 40px; /* cette marge intérieure reflète la marge intérieure droite dans les en-têtes et la règle de paragraphe ci-dessus. Une marge intérieure a été placée en bas, afin d'assurer un espace entre les autres éléments des listes, et à gauche pour créer le retrait. Vous pouvez les régler comme bon vous semble. */
+}
+.lire_la_suite a {
+	color: #88A20B;
+    padding-left: 540px;
+    text-decoration: none;
+	background-image:url(../images/trois_puces_1.png);
+	background-position:bottom right;
+	background-repeat:no-repeat;
+	
+	
+}
+
+/* ~~ Styles de liste de navigation (peuvent être supprimés si vous optez pour un menu de survol prédéfini tel que Spry) ~~ */
+ul.nav {
+	list-style: none; /* entraîne la suppression du marqueur de liste */
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+ul.nav li {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #000;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	-ms-border-radius:4px;
+	background:#FFF;
+	text-decoration: none;
+	text-align:center;
+	text-transform: uppercase;
+	color: #0b76b3;
+	padding-top:3px;
+	box-shadow:5px 5px 20px #000;
+	-moz-box-shadow:5px 5px 20px #000;
+	-webkit-box-shadow:5px 5px 20px #000;
+	-khtml-box-shadow:5px 5px 20px #000;
+	-ms-box-shadow:5px 5px 20px #000;
+}
+ul.nav a { /* le regroupement de ces sélecteurs garantit que vos liens conservent leur apparence de bouton, même après avoir été activés */
+	padding: 5px 5px 5px 5px;
+	display: block; /* attribue au bloc de liens des propriétés qui lui font remplir toute la balise LI qui le contient. Force la zone entière à réagir à un clic de souris. */
+	text-decoration: none;
+	text-align:center;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus, ul .nav a:visited{ /* modifie la couleur de l'arrière-plan et du texte pour les navigateurs à la souris et au clavier. */
+	color: #0b76b3;
+	background-position:208px;
+}
+.nav_secondaire li a {
+	text-transform: none;
+	color: #93aa21;
+	text-decoration: none;
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+ul .nav_secondaire {
+	padding-left:21px;
+	
+	}
+ul .nav_secondaire li {
+	border-style: none;
+	margin: 0;
+	list-style-type: disc;
+	color:#93aa21;
+	padding:0;
+}
+ul .nav_secondaire li:hover{
+	color:#0b76b3;
+	}
+.sidebar1 .nav li .nav_secondaire .nav_secondaire {
+	box-shadow:none;
+}
+
+
+.sidebar1 .nav li .nav_secondaire .nav_secondaire_2 {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	list-style-type: none;
+	box-shadow:none;
+	width: 201px;
+	height: 10px;
+}
+
+
+.sidebar1 .nav li .nav_secondaire .nav_secondaire_2 .trois_point {
+	width:201px;
+	height:5px;
+	background-image:url(../images/trois_puces_1.png);
+	background-repeat:no-repeat;
+	background-position:top right;
+	margin-top:3px;
+}
+
+.sidebar1 .nav li .nav_secondaire .nav_secondaire_2 .trois_point:hover {
+	width:201px;
+	height:5px;
+	background-image:url(../images/trois_puces_1.png);
+	background-repeat:no-repeat;
+	background-position:bottom right;
+	margin-top:3px;
+}
+
+
+
+/*====================*/
+/*=== Footer Style ===*/
+/*====================*/
+
+.footer {
+	margin-top:0;
+	background-color:#FFF;
+	width:964px;
+	height:237px;
+	clear: both;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	border: 1px solid #000;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	-ms-border-radius:4px;
+	box-shadow:5px 5px 20px #000;
+	-moz-box-shadow:5px 5px 20px #000;
+	-webkit-box-shadow:5px 5px 20px #000;
+	-khtml-box-shadow:5px 5px 20px #000;
+	-ms-box-shadow:5px 5px 20px #000;
+	}
+#col {
+	margin:0 auto;
+}
+.footer_col1 {
+	display: block;
+	float: left;
+	width: 239px;
+	padding-top: 10px;
+	
+}
+
+.footer h2 {
+	text-align:center;
+	text-transform: uppercase;
+	color: #0b76b3;
+}
+.footer ul{
+	padding-left:30px;
+	}
+.footer ul li {
+	border-style: none;
+	list-style-type: disc;
+	color:#88a20b;
+	margin: 0;
+	padding-left:5px;
+}
+
+.footer ul li:hover{
+	color:#0B76B3;
+	}
+
+.footer a {
+	text-transform: none;
+	color: #93aa21;
+	text-decoration: none;
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.footer a:hover{
+	color:#0b76b3;
+	}
+.strike_verticale {
+	background-image:url(../images/strike_copy.png);
+	background-repeat:repeat-y;
+	width:1px;
+	height:193px;
+	padding-left:1px;
+	margin-top:15px;
+	float:left;
+}
+/*====================*/
+/*= Copyright Style ==*/
+/*====================*/
+
+#copyright {
+	margin:0 auto;
+	text-transform: none;
+	text-align: center;
+}
+#copyright .strike {
+	float: left;
+	height: 5px;
+	width: 918px;
+	background-image:url(../images/strike_copy.png);
+	background-repeat: repeat-x;
+	margin-top:5px;
+	background-position: 300px;
+	margin-left: 20px;
+}
+#copyright #copy {
+	float: left;
+	width: 964px;
+	text-align: center;
+	font-size:10px;
+	color:#0b76b3;
+}
